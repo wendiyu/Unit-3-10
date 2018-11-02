@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//Created on: 01-Nov-2018
+//Created by: Wendi Yu
+//Created for: ICS3UR
+// made to calculate the final average 
+
+var answer = 0
+var counter = 0
+var average = 0
+
+//input
+var number = Int(askForNumber("Enter number"))
+
+//process 
+if number &gt;= 0 || number &lt;= 100 {
+    repeat {
+        answer = answer + number
+        counter = counter + 1
+        average = answer / counter
+        show("Your current average is: \(average)")
+        number = Int(askForNumber("Enter number"))
+        } while number != -1
+            show("Your final average is: \(average)")
+        }
+    
+
+
+
+    
+</string>
+			<key>ModifiedRange</key>
+			<string>{145, 581}</string>
+			<key>OriginalContent</key>
+			<string>show("What is your name?")
+
+let name = ask("Name")
+
+show("Hi " + name)
+
+</string>
+			<key>OriginalRange</key>
+			<string>{145, 72}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Answers.playgroundchapter/Pages/Text.playgroundpage/Contents.swift</string>
+</dict>
+</plist>
